@@ -1,0 +1,30 @@
+@base_address = http://localhost:8000
+
+### Получить список всех записей
+GET {{base_address}}/appointments
+
+### Создать новую запись1
+POST {{base_address}}/appointments
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Doctor Advord M. Meeting with patient John Trab",
+  "date": "2024-06-30"
+}
+
+### Создать новую запись2
+POST {{base_address}}/appointments
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Doctor Lamart A. Meeting with patient Sarah Crave",
+  "date": "2024-07-01"
+}
+
+### Получить информацию о записи по ID 1
+GET {{base_address}}/appointments/1
+
+### Получить информацию о водителе по ID 2
+GET {{base_address}}/appointments/2
