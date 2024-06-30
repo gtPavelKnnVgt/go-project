@@ -26,5 +26,5 @@ Content-Type: application/json
 ### Получить информацию о записи по ID 1
 GET {{base_address}}/appointments/1
 
-### Получить информацию о водителе по ID 2
+### Получить информацию о записи по ID 2
 GET {{base_address}}/appointments/2
